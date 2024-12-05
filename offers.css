@@ -1,0 +1,123 @@
+/* Offer Section */
+.container {
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card-text {
+    color: #555;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+.btn-custom {
+    background-color: #6d1179;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Modal */
+.modal-header {
+    background-color: white;
+    color: black;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    background-color: #f1f1f1;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+}
+
+.modal-footer .btn-primary {
+    background-color: #6d1179;
+   
+}
+
+/* Footer Section */
+.footer {
+    background-color: #3d2b1f; 
+    color: white; 
+    padding: 30px 0; 
+    text-align: center; 
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ 
+ .footer-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+ }
+ 
+ .get-in-touch, .hours {
+    flex: 1; 
+    text-align: left; 
+    font-family:Arial, Helvetica, sans-serif;
+ }
+ 
+ .get-in-touch h3, .hours h3 {
+    font-size: 16px; 
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    color: #d7ccc8; 
+ }
+ 
+ .get-in-touch ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+ }
+ 
+ .get-in-touch ul li {
+    margin: 5px 0; 
+    font-size: 14px; 
+ }
+ 
+ .get-in-touch ul li i {
+    color: #d7ccc8; 
+    margin-right: 10px; 
+ }
+ 
+ .hours p {
+    margin: 5px 0; 
+    font-size: 14px; 
+ }
+ 
+ /* Responsive Adjustments */
+ @media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center; 
+    }
+ 
+    .get-in-touch, .hours {
+        text-align: center; 
+    }
+ }
+ 
