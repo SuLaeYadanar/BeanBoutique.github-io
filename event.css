@@ -1,0 +1,115 @@
+/* Event Section */
+.event-section {
+   width: 100%;
+   padding: 20px 0; /* Add some padding to the top and bottom for spacing */
+   background-color: #f8f9fa; /* Optional: Add a light background color */
+}
+
+.event-item {
+   max-width: 100%; /* Ensure it stretches to fill the full width */
+   text-align: left;
+   padding: 15px;
+   margin: 0 auto; /* Center the content if necessary */
+}
+
+.event-title {
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+
+.event-description {
+   font-size: 16px;
+   margin-bottom: 20px;
+}
+
+.event-img {
+   width: 250px; /* Sets a fixed width for all images */
+   height: 200px; /* Sets a fixed height for all images */
+   border-radius: 10px; /* Adds rounded corners */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+   object-fit: cover; /* Ensures the image fits within the specified size without distortion */
+   transition: transform 0.3s ease; /* Adds a smooth transition for hover effects */
+}
+
+
+/* Add this to your event.css file or within a <style> tag in the <head> section */
+.event-box {
+   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+   border: 1px solid #ddd; /* Add a light border around the event box */
+   border-radius: 8px; /* Optional: gives rounded corners */
+   padding: 10px; /* Optional: adds padding inside the box */
+   background-color: white; /* Ensures background is white by default */
+}
+
+.event-box:hover {
+   transform: translateY(-10px); /* Moves the event box slightly upwards */
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+   cursor: pointer; /* Changes the cursor to indicate that it's clickable */
+   background-color: #f8f9fa; /* Changes the background on hover */
+   border-color: #6c217e; 
+}
+
+/* Footer Section */
+.footer {
+   background-color: #3d2b1f; 
+   color: white; 
+   padding: 30px 0; 
+   text-align: center; 
+   font-family: Arial, Helvetica, sans-serif; /* Ensure consistent font family */
+   font-size: 14px; /* Ensure consistent font size */
+}
+
+.footer-row {
+   display: flex;
+   justify-content: space-between; 
+   align-items: flex-start; 
+   max-width: 800px; 
+   margin: 0 auto; 
+   gap: 20px; 
+   flex-wrap: wrap; 
+}
+
+.get-in-touch, .hours {
+   flex: 1; 
+   text-align: left;
+}
+
+.get-in-touch h3, .hours h3 {
+   font-size: 16px; 
+   margin-bottom: 10px;
+   text-transform: uppercase; 
+   color: #d7ccc8;
+}
+
+.get-in-touch ul {
+   list-style: none; 
+   padding: 0; 
+   margin: 0;
+}
+
+.get-in-touch ul li {
+   margin: 5px 0; 
+   font-size: 14px; /* Ensure consistent font size */
+}
+
+.get-in-touch ul li i {
+   color: #d7ccc8; 
+   margin-right: 10px; 
+}
+
+.hours p {
+   margin: 5px 0; 
+   font-size: 14px; /* Ensure consistent font size */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+   .footer-row {
+       flex-direction: column;
+       text-align: center; 
+   }
+
+   .get-in-touch, .hours {
+       text-align: center; 
+   }
+}
