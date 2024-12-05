@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewing Equipment</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .btn-primary {
+    background-color: #6d1179 !important;
+    border-color: #6d1179 !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #6d1179 !important;
+    border-color: #6d1179 !important;
+}
+
+    </style>
+</head>
+<body>
+
+   <!-- Top -->
+   <div class="alert alert-purple text-center mb-0 py-2" role="alert">
+       CHOOSE YOUR FAVORITE LOCATION FOR OFFERS, EVENTS, AND MORE!
+   </div>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-light" style="padding-top: 8px; padding-bottom: 8px;">
+       <div class="container">
+        <strong><a class="navbar-brand" href="#">Bean Boutique</a></strong>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a href="index.html" class="nav-link text-uppercase">Home</a>
+                    </li>
+                   <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle text-uppercase" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Shop
+                       </a>
+                       <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                           <li><a href="CoffeeBeans.html" class="dropdown-item">Coffee Beans</a></li>
+                           <li><a href="BrewingEquipments.html" class="dropdown-item">Brewing Equipments</a></li>
+                       </ul>
+                   </li>
+                   <li class="nav-item">
+                    <a href="offers.html" class="nav-link text-uppercase">Offer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link text-uppercase">Events</a>
+                </li>
+
+                   <li class="nav-item">
+                    <div class="search-container">
+                        <input type="text" id="search-input" class="form-control search-input" placeholder="Search...">
+                        <i class="fa fa-search search-icon"></i>
+                        <div id="search-dropdown" class="dropdown-menu"></div>
+                    </div>
+                </li>    
+
+                <li class="nav-item">
+                    <a class="nav-link btn cart-btn text-uppercase" href="cart.html">
+                        <i class="fa fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+                
+               </ul>
+           </div>
+       </div>
+   </nav>
+
+
+<!-- Equipment Gallery using Bootstrap grid -->
+<section class="container mt-4">
+    <h2 class="mb-3">Brewing Equipment</h2>
+    <p>Find high-quality brewing equipment to make the perfect cup every time. Select from our range of coffee makers, grinders, and accessories.</p>
+
+    <!-- Equipment Gallery using Bootstrap grid -->
+    <div class="row" id="equipment-gallery">
+
+        <div class="col-md-4 mb-4 equipment-item" data-name="Automatic Drip Coffee Makers">
+            <div class="card h-100">
+                <img src="AutomaticDripCoffeeMakers.webp" class="card-img-top" alt="Automatic Drip Coffee Makers">
+                <div class="card-body">
+                    <h5 class="card-title">Automatic Drip Coffee Makers</h5>
+                    <p class="card-text">A convenient machine that brews coffee by automatically dripping hot water over ground coffee. Ideal for everyday use and larger servings.</p>
+                    <p class="price">$20</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4 equipment-item" data-name="Precision Coffee Grinder">
+            <div class="card h-100">
+                <img src="PrecisionCoffeeGrinder.webp" class="card-img-top" alt="Precision Coffee Grinder">
+                <div class="card-body">
+                    <h5 class="card-title">Precision Coffee Grinder</h5>
+                    <p class="card-text">Ensures consistent coffee grounds by allowing precise control over grind size, perfect for optimizing flavor for different brewing methods.</p>
+                    <p class="price">$150</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4 equipment-item" data-name="Classic French Press">
+            <div class="card h-100">
+                <img src="ClassicFrenchPress.webp" class="card-img-top" alt="Classic French Press">
+                <div class="card-body">
+                    <h5 class="card-title">Classic French Press</h5>
+                    <p class="card-text">A timeless manual coffee maker that steeps coffee grounds in hot water, delivering a rich, full-bodied brew.</p>
+                    <p class="price">$150</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+                <div class="col-md-4 mb-4 equipment-item" data-name="Deluxe Coffee Maker">
+                    <div class="card h-100">
+                        <img src="DeluxeCoffeeMaker.jpg" class="card-img-top" alt="Deluxe Coffee Maker">
+                        <div class="card-body">
+                            <h5 class="card-title">Deluxe Coffee Maker</h5>
+                            <p class="card-text">A versatile machine often featuring multiple brewing options, such as single-serve, carafe, or specialty brews for ultimate convenience.</p>
+                            <p class="price">$500</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+              
+                <div class="col-md-4 mb-4 equipment-item" data-name="Espresso Maker">
+                    <div class="card h-100">
+                        <img src="EsperssoMaker.webp" class="card-img-top" alt="Espresso Maker">
+                        <div class="card-body">
+                            <h5 class="card-title">Espresso Maker</h5>
+                            <p class="card-text">Designed to extract rich, concentrated espresso shots using high-pressure water and finely ground coffee, perfect for coffee enthusiasts.</p>
+                            <p class="price">$1500</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- 4th Item -->
+                <div class="col-md-4 mb-4 equipment-item" data-name="Blender">
+                    <div class="card h-100">
+                        <img src="Blender.jpeg" class="card-img-top" alt="Blender">
+                        <div class="card-body">
+                            <h5 class="card-title">Blender</h5>
+                            <p class="card-text">A multi-purpose appliance for blending, pureeing, and mixing, essential for smoothies, sauces, and even iced coffee creations.</p>
+                            <p class="price">$170</p>
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                        <!-- 2nd Item -->
+        <div class="col-md-4 mb-4 equipment-item" data-name="Oven">
+            <div class="card h-100">
+                <img src="Oven.jpg" class="card-img-top" alt="Oven">
+                <div class="card-body">
+                    <h5 class="card-title">Oven</h5>
+                    <p class="card-text">A kitchen staple used for baking, roasting, and grilling. It's versatile for cooking meals or baking desserts that pair perfectly with coffee.</p>
+                    <p class="price">$900</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- More items can be added here -->
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <!-- Get In Touch Section -->
+            <div class="get-in-touch">
+                <h3>GET IN TOUCH</h3>
+                <ul class="contact-info">
+                    <li><i class="fa fa-map-marker"></i> 123 Street, Mandalay</li>
+                    <li><i class="fa fa-phone"></i> +012 345 67890</li>
+                    <li><i class="fa fa-envelope"></i> info@example.com</li>
+                </ul>
+            </div>
+            
+            <!-- Open Hours Section -->
+            <div class="hours">
+                <h3>HOURS</h3>
+                <ul class="open-hours">
+                    <li>Monday - Friday: 8.00 AM - 8.00 PM</li>
+                    <li>Saturday - Sunday: 2.00 PM - 8.00 PM</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+   <!-- Bootstrap JS and dependencies -->
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+   <!-- Link to external JS file for any functionality, like adding to cart -->
+   <script src="script.js"></script>
+</body>
+</html>
