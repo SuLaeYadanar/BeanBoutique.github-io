@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Ensures all carousel images are the same size */
+        .carousel-inner img {
+            width: 100%; /* Full width */
+            height: 500px; /* Fixed height */
+            object-fit: cover; /* Cover the container without distortion */
+        }
+        /* Set consistent height for carousel container */
+        .hero-section {
+            max-width: 100%;
+            height: 500px; /* Adjust height as needed */
+            overflow: hidden; /* Prevents overflow of images */
+        }
+        .content-container {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+            margin-left: 20px;
+            border: 2px solid #6d1179; /* Adds a black border around the content container */
+            border-radius: 10px; /* Optional: Rounds the corners of the border */
+            padding: 10px; /* Optional: Adds space inside the border */
+            box-sizing: border-box; /* Ensures padding and border do not affect the overall width */
+    }
+    </style>
+</head>
+<body>
+
+   <!-- Top -->
+   <div class="alert alert-purple text-center mb-0 py-2" role="alert">
+    CHOOSE YOUR FAVORITE LOCATION FOR OFFERS, EVENTS, AND MORE!
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light" style="padding-top: 8px; padding-bottom: 8px;">
+    <div class="container">
+        <strong><a class="navbar-brand" href="#">Bean Boutique</a></strong>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-uppercase">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                        <li><a href="CoffeeBeans.html" class="dropdown-item">Coffee Beans</a></li>
+                        <li><a href="BrewingEquipments.html" class="dropdown-item">Brewing Equipments</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="offers.html" class="nav-link text-uppercase" >Offer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="events.html" class="nav-link text-uppercase" >Events</a>
+                </li>
+                
+                <li class="nav-item">
+                    <div class="search-container">
+                        <input type="text" id="search-input" class="form-control search-input" placeholder="Search...">
+                        <i class="fa fa-search search-icon"></i>
+                        <div id="search-dropdown" class="dropdown-menu"></div>
+                    </div>
+                </li>                           
+
+                <li class="nav-item">
+                    <a class="nav-link btn cart-btn text-uppercase" href="cart.html">
+                        <i class="fa fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Video Section -->
+<div class="hero-section">
+    <video autoplay muted loop class="d-block w-100" height="500px">
+        <source src="Coffee.mp4" type="video/mp4">
+    </video>
+</div>
+
+<div class="welcome-container">
+    <h2>About Us</h2>
+    <p>At our coffee shop, we are passionate about serving high-quality, freshly brewed coffee that brings people together. From sourcing the finest beans to crafting the perfect cup, we take pride in every step of the process. Whether you’re here to enjoy a quiet moment with a warm latte or to catch up with friends over a delicious cappuccino, our cozy atmosphere offers the ideal setting. We also believe in supporting local communities and sustainable practices, ensuring that every sip you take is both satisfying and responsible. Come in, relax, and experience the love we pour into every cup!</p>
+</div>
+
+<div class="content-container">
+    <div class="content" id="content">
+        <a class="content-item">
+            <img src="ShopDesign.jpg" alt="Breakfast">
+        </a>
+        
+        <a class="content-item">
+            <img src="Shop.jpg" alt="Breakfast">
+        </a>
+        <a class="content-item">
+            <img src="LightRoastCoffee.jpg" alt="Breakfast">
+        </a>   
+        <a class="content-item">
+            <img src="Equipments.jpg" alt="Breakfast">
+        </a>
+        <a class="content-item">
+            <img src="DarkRoastCoffee.jpeg" alt="Breakfast">
+        </a>
+        <a class="content-item">
+            <img src="CoffeeBeanTypes.jpg" alt="Breakfast">
+        </a>
+        <a class="content-item">
+            <img src="LatteArtMasterclass.jpeg" alt="Breakfast">
+        </a>
+        <a class="content-item">
+            <img src="Making.jpg" alt="Breakfast">
+        </a>
+    </div>
+</div>
+
+<div class="testimonial-section">
+    <h2>What Our Clients Say</h2>
+    <div id="testimonial-container">
+        <div class="testimonial" id="testimonial1">
+            <p id="review-text"></p>
+            <h4 id="reviewer"></h4>
+            <p id="review-source"></p>
+        </div>
+    </div>
+    <div id="dots-container"></div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <!-- Get In Touch Section -->
+            <div class="get-in-touch">
+                <h3>GET IN TOUCH</h3>
+                <ul class="contact-info">
+                    <li><i class="fa fa-map-marker"></i> 123 Street, Mandalay</li>
+                    <li><i class="fa fa-phone"></i> +012 345 67890</li>
+                    <li><i class="fa fa-envelope"></i> info@example.com</li>
+                </ul>
+            </div>
+            
+            <!-- Open Hours Section -->
+            <div class="hours">
+                <h3>HOURS</h3>
+                <ul class="open-hours">
+                    <li>Monday - Friday: 8.00 AM - 8.00 PM</li>
+                    <li>Saturday - Sunday: 2.00 PM - 8.00 PM</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
