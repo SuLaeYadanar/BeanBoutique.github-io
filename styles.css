@@ -1,0 +1,409 @@
+/* Top Banner */
+.alert-purple {
+    background-color: #3d2b1f;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-nav .nav-link:hover {
+    color: #6c217e;
+    transition: color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+}
+.dropdown-item:hover {
+    background-color: #3d2b1f;
+    color: white;
+}
+
+/*for search bar and button*/
+/* Search container */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adds space between "Events" and the search bar */
+}
+
+/* Search input field */
+.search-input {
+    width: 0;
+    opacity: 0;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border: none;
+    border-bottom: 2px solid #6d1179;
+    background-color: transparent;
+    color: #000;
+    padding: 5px;
+}
+
+/* Show the search input on hover or focus */
+.search-container:hover .search-input,
+.search-input:focus {
+    width: 200px;
+    opacity: 1;
+}
+
+/* Search icon inside the input */
+.search-icon {
+    position: absolute;
+    right: 5px; /* Position it to the right side inside the input field */
+    font-size: 18px;
+    color: #6d1179;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Dropdown styling */
+#search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown items */
+#search-dropdown a {
+    display: block;
+    padding: 10px;
+    color: #6c217e;
+    text-decoration: none;
+}
+
+#search-dropdown a:hover {
+    background-color: #6d1179;
+    color: white;
+}
+
+/*search bar end*/
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Adjust height to fit the image */
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.hero-section img {
+    width: 800px;
+    height: 500px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 500px; /* Set your desired height */
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Center the paragraph */
+.welcome-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome-container h2 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    color: #000000;
+    margin: 0 auto;
+    max-width: 800px; 
+    line-height: 1.6;
+}
+
+/* Ensures all carousel images are the same size */
+.carousel-inner img {
+    width: 100%; 
+    height: 500px; 
+    object-fit: cover; 
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+.hero-section video {
+    width: 100%;   /* Make the video span the full width */
+    height: 100vh; /* Ensure the video fills the viewport height */
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
+}
+
+/* Container for the content items */
+.content-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+    position: relative; 
+    border: 2px solid #3d2b1f; 
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+/* Scrolling content */
+.content {
+    display: flex;
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    scroll-behavior: smooth; 
+    white-space: nowrap; 
+}
+
+
+/* Content items */
+.content-item {
+    display: inline-block; 
+    text-decoration: none; 
+    margin-right: 20px; 
+    color: inherit; 
+}
+
+/* Style for images */
+.content-item img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+/* Style for the text under the images */
+.content-item p {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*review*/
+.testimonial-section {
+    text-align: center;
+    background-color: #f9f7f2;
+    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#testimonial-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#dots-container {
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #6c217e;
+}
+
+/* Hero Section */
+.hero-section {
+    max-width: 100%;
+    height: 100vh; /* Make the section full viewport height */
+    overflow: hidden; /* Hide any content that exceeds the container */
+    position: relative;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100vh; /* Ensures image fills viewport height */
+    object-fit: cover; /* Ensures image covers the container without distortion */
+}
+
+/* Hover Effect */
+.content-item:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+    border-color: #6d1179; /* Changes border color on hover */
+}
+
+.content-item:hover img {
+    transform: scale(1.3); /* Zoom in on image for a subtle effect */
+}
+/* Footer Section */
+.footer {
+    background-color: #3d2b1f; 
+    color: white; 
+    padding: 30px 0; 
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif; /* Ensure consistent font family */
+    font-size: 14px; /* Ensure consistent font size */
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.get-in-touch, .hours {
+    flex: 1; 
+    text-align: left;
+}
+
+.get-in-touch h3, .hours h3 {
+    font-size: 16px; 
+    margin-bottom: 10px;
+    text-transform: uppercase; 
+    color: #d7ccc8;
+}
+
+.get-in-touch ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.get-in-touch ul li {
+    margin: 5px 0; 
+    font-size: 14px; /* Ensure consistent font size */
+}
+
+.get-in-touch ul li i {
+    color: #d7ccc8; 
+    margin-right: 10px; 
+}
+
+.hours p {
+    margin: 5px 0; 
+    font-size: 14px; /* Ensure consistent font size */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .get-in-touch, .hours {
+        text-align: center; 
+    }
+}
+
+/*For Brewing Eq*/
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.equipment-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+/* Ensure items are 3 per row with Bootstrap grid system */
+.equipment-item {
+    padding: 20px; /* Increase padding to make the items bigger */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipment-item img {
+    width: 100%;
+    height: 200px; /* Make image taller */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.equipment-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  /* Ensures items are spaced evenly */
+    gap: 20px;
+}
+
+.equipment-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.equipment-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.equipment-item p {
+    font-size: 14px;
+    color: #666;
+}
