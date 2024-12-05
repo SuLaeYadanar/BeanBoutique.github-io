@@ -1,0 +1,35 @@
+.quantity-col {
+    width: 80px; /* Adjust this value to fit your design */
+    text-align: center;
+}
+
+.quantity-input {
+    width: 60px; /* Adjust the width of the input to make it more compact */
+}
+
+.btn-custom {
+    background-color: #6d1179;
+    color: white;
+}
+
+/*for place order btn*/
+/* Remove hover effect and set consistent color */
+.custom-order-btn {
+    background-color: #6d1179;  /* Change this to your desired color */
+    color: white;
+    border: none;  /* Optional: removes border */
+    transition: none; /* Disables transition effects */
+}
+
+/* Ensure the same color on hover */
+.custom-order-btn:hover {
+    background-color: #6d1179;  /* Keep the same color on hover */
+    color: white;
+    border: none;  /* Optional: keeps no border on hover */
+}
+
+/* Optional: Remove active button effect (when clicked) */
+.custom-order-btn:active {
+    background-color: #6d1179; /* Keep the same active color */
+    color: white;
+}
